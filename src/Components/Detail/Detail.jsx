@@ -5,6 +5,7 @@ import data from "./Image";
 import "../../Style/Detail/img.css";
 import "../../Style/Main/Main.scss";
 import TopbarV2 from "../Main/TopbarV2";
+import { useLocation } from "react-router-dom";
 
 const { kakao } = window;
 
@@ -13,11 +14,38 @@ const Detail = () => {
   const [currItem, setCurrItem] = useState(datas[0]);
   const [heart, setheart] = useState(false);
   const [like, setlike] = useState(false);
+  //-------------------------------------------
+  // 스크롤 오브젝트 Ref
   const photosRef = useRef();
   const detailRef = useRef();
   const mappgRef = useRef();
   const reviewRef = useRef();
-
+  //----------------------------------------------
+  //link로 데이터전달 useLocation hook
+  const location = useLocation();
+  const Address = location.state.Address;
+  const place_name = location.state.place_name;
+  const CategoryName = location.state.CategoryName;
+  const id = location.state.id;
+  //-----------------------------------------------
+  //업종별 카테고리 문자열 원하는것만 출력
+  var str = CategoryName;
+  var words = str.split(">"); // ">" 구분으로 배열로 변환
+  var word1 = str.substring(0, str.indexOf(">"));
+  var word2 = str.substring(
+    str.indexOf(">") + 1,
+    str.indexOf(">", str.indexOf(">") + 1)
+  );
+  var word3 = str.substring(str.lastIndexOf(">") + 1);
+  console.log(word3);
+  const count = CategoryName.match(/>/g).filter((item) => item !== "").length; // ">"겟수 카운터
+  var keystr; // ">"갯수에 따라 출력
+  if (count == 2) {
+    keystr = word2;
+  } else {
+    keystr = word3;
+  }
+  //-----------------------------------------------------------
   const HeartImg = "/images/heart.png";
   const EmptyHeartImg = "/images/heart1.png";
 
@@ -90,8 +118,8 @@ const Detail = () => {
             <hr width="1000px" />
             <div className="Box">
               <div className="confont">
-                <div className="cafe">고깃리 88번지</div>
-                <div className="Foods">돼지고기구이</div>
+                <div className="cafe">{place_name}</div>
+                <div className="Foods">{keystr}</div>
               </div>
 
               <div className="group left" ref={detailRef}>
@@ -104,7 +132,7 @@ const Detail = () => {
 
               <div className="group right">
                 <div>★★★★★</div>
-                <div>대전 서구 신갈마로 264-16</div>
+                <div>{Address}</div>
 
                 <div>가능</div>
                 <div>11:00~21:00</div>
@@ -140,17 +168,18 @@ const Detail = () => {
             <hr width="1000px" />
             <div className="사용자" ref={reviewRef}>
               <div className="usercon">
-                <img className="userimg" src="/images/3.jpg" alt="" />
+                <img className="userimg" src="/images/3.jpg" />
                 <div>비둘기</div>
               </div>
               <textarea id="" cols="100" rows="10"></textarea>
-              <br />
-              <br />
+            </div>
+            <br />
+            <div className="사용자">
               <div className="usercon">
                 <img className="userimg" src="/images/6.jpg" alt="" />
                 <div>멧밭쥐</div>
               </div>
-              <textarea id="" cols="100" rows="10"></textarea>
+              <div className="contant">고기 촵촵촵 냠냠냠 마이쪙~!!</div>
             </div>
           </div>
         </div>
