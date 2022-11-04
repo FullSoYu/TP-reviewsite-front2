@@ -1,0 +1,109 @@
+.signUpbody {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: -120px;
+  z-index: 999999;
+  animation: modal-show 0.4s;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+}
+.signUptemplate {
+  position: relative;
+  display: inline-block;
+  padding: 50px;
+  top: 250px;
+  border-radius: 10px;
+  width: 500px;
+  min-height: 600px;
+  background-color: white;
+  cursor: default;
+}
+
+.signUpLogo {
+  position: absolute;
+  text-align: left;
+  width: 97%;
+  left: 10px;
+  top: 5px;
+  height: 68px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.signUpLogo > p {
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  top: -10px;
+  color: rgb(22, 56, 141);
+}
+.signUpForm {
+  position: relative;
+  top: 45px;
+  font-size: 18px;
+  right: 18px;
+  input {
+    width: 520px;
+    height: 35px;
+    margin-top: 5px;
+    margin-right: 20px;
+    border: 0;
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+  }
+  input:focus {
+    outline: none;
+  }
+}
+.confirm {
+  font-family: "MonoplexKR-Regular";
+  display: inline-block;
+  position: absolute;
+  background-color: rgba(72, 72, 140, 0);
+  top: 30px;
+  width: 78px;
+  right: -25px;
+  border: 0px;
+  padding: 10px;
+}
+.confirm:hover {
+  font-weight: bold;
+}
+.signUpForm div {
+  position: relative;
+  text-align: left;
+  margin-bottom: 15px;
+  color: black;
+}
+.signUpButton {
+  font-family: "MonoplexKR-Regular";
+  position: relative;
+  font-size: 16px;
+  top: 15px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+}
+.loginButton {
+  position: relative;
+  display: inline-block;
+  text-decoration: underline;
+  cursor: pointer;
+  top: -10px;
+  right: 200px;
+}
+.loginButton:hover {
+  font-weight: bolder;
+}
+.alert {
+  font-size: 12px;
+  position: relative;
+  top: 0px;
+  color: red;
+}
+.closeModal2 {
+  left: 297px;
+}

@@ -1,0 +1,166 @@
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.backbar {
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  background-color: #34447a;
+  z-index: 99999;
+}
+.menuBar {
+  position: relative;
+  min-width: 1600px;
+  height: 100%;
+  flex: 1 1 auto;
+  margin: 0 auto;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+.menuBar > div {
+  display: inline-block;
+}
+.siteLogo {
+  position: relative;
+  font-family: "OTEnjoystoriesBA";
+  width: 180px;
+  height: 100%;
+  text-align: center;
+  left: 15px;
+}
+.siteLogo > a {
+  position: relative;
+  font-size: 45px;
+  color: white;
+  top: 25px;
+}
+.menuList {
+  font-family: "HallymGothic-Regular";
+  position: relative;
+  left: 150px;
+}
+.menuList > div > div {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  left: 80px;
+  top: 22px;
+  padding: 0 5px;
+}
+.menuList > div:first-child {
+  position: relative;
+  padding-right: 30px;
+  font-size: 17px;
+  left: -20px;
+  color: white;
+}
+.sign_btn > div {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+.logoutBtn {
+  color: white;
+  cursor: pointer;
+}
+.menu1 > ul {
+  cursor: pointer;
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  width: 80px;
+}
+
+// 2차 메뉴 아이템
+.menu1 > ul > ul > li {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  display: none;
+  width: 130px;
+  height: 20px;
+  padding: 6px 0;
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  border: 1px solid gray;
+  border-bottom: 0px;
+}
+.menu1 > ul > ul > li:last-child {
+  border-bottom: 1px solid gray;
+}
+.menu1 > ul:hover ul li {
+  display: block;
+}
+.menu1 > ul ul > li:hover {
+  background-color: gray;
+  color: white;
+}
+// 2차 메뉴아이템 구현 완료
+
+.TiThMenu {
+  position: absolute;
+  top: 25px;
+  right: 78px;
+}
+.BiCurrentLocation {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 540px;
+  top: -15px;
+  color: rgba(243, 243, 243, 0.8);
+}
+.BiCurrentLocation:hover {
+  color: white;
+}
+.now_location {
+  position: relative;
+  top: -25px;
+}
+.username {
+  position: relative;
+  top: 25px;
+  left: 450px;
+  font-family: "HallymGothic-Regular";
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+.usernameback {
+  text-decoration: none;
+  position: relative;
+  margin-left: 5px;
+  color: rgba(243, 243, 243, 0.8);
+  font-weight: lighter;
+}
+
+.username2 {
+  position: relative;
+  top: 25px;
+  left: 540px;
+  font-family: "HallymGothic-Regular";
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+.usernameback2 {
+  text-decoration: none;
+  position: relative;
+  margin-left: 5px;
+  color: rgba(243, 243, 243, 0.8);
+  font-weight: lighter;
+}
+.CenterAddr {
+  color: red;
+  z-index: 99;
+}

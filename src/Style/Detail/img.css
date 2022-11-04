@@ -1,0 +1,296 @@
+.rod {
+  position: relative;
+  margin-top: 30px;
+}
+.wrap {
+  width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  position: relative;
+}
+.wrap .left {
+  width: 600px;
+}
+.wrap .left > img {
+  vertical-align: top;
+  width: 1000px;
+  height: 700px;
+  margin-top: 110px;
+}
+.wrap .left ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+.wrap .left ul li {
+  width: 200px;
+}
+.wrap .left ul li img {
+  width: 200px;
+  vertical-align: top;
+  height: 130px;
+}
+.wrap .right {
+  width: 400px;
+  background: beige;
+  padding: 30px;
+}
+.wrap .right h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.wrap .right p {
+  font-size: 20px;
+}
+.wrap .desc {
+  position: absolute;
+  display: inline-block;
+}
+.body1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Box {
+  text-align: center;
+  border-radius: 5%;
+  width: 1000px;
+  height: auto;
+  background-color: white;
+  display: block;
+  margin: 150px auto;
+}
+.confont {
+  position: relative;
+  margin-bottom: 50px;
+  height: 50px;
+}
+.cafe {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+}
+.Foods {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.icon > div > img {
+  width: 60px;
+  position: relative;
+  margin-left: 3%;
+}
+.icon {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  margin-left: 37%;
+  margin-top: 100px;
+}
+
+.icon > div {
+  display: block;
+  text-align: center;
+  align-items: flex-start;
+}
+.NavGroup {
+  position: fixed;
+  margin: 20px;
+  display: block;
+  margin-top: -600px;
+  margin-left: 90%;
+  z-index: 50;
+}
+.NavGroup > button {
+  display: block;
+  margin: 20px 0px;
+  font-family: OTEnjoystoriesBA;
+  font-size: 2rem;
+  min-width: 100px;
+}
+.NavGroup > button:hover {
+  transition: transform 300ms ease;
+  transform: scale(1.3);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  color: white;
+  background-color: black;
+}
+
+.group {
+  width: auto;
+  height: 100px;
+  display: inline-block;
+  font-size: 1.3rem;
+}
+.left {
+  text-align: right;
+  margin-right: 2%;
+}
+.right {
+  text-align: left;
+}
+.group > div {
+  margin: 10px;
+}
+
+.rode_api1 {
+  background-color: white;
+  border-left: 1px solid gray;
+  width: 1000px;
+  height: 500px;
+}
+.maptext {
+  font-size: 30px;
+  text-align: center;
+  height: 50px;
+  margin-bottom: 0;
+}
+.likeImg {
+  background-image: url(/public/images/like2.png);
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin-left: 10px;
+  background-size: cover;
+}
+
+.EmptylinkeImg {
+  background-image: url(/public/images/like1.png);
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin-left: 10px;
+  background-size: cover;
+}
+.EmptyHeartImg {
+  background-image: url(/public/images/heart.png);
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin-left: 10px;
+  background-size: cover;
+}
+.HeartImg {
+  background-image: url(/public/images/heart1.png);
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin-left: 10px;
+  background-size: cover;
+}
+.iconbut:hover {
+  cursor: pointer;
+  transition: transform 300ms ease;
+  transform: scale(1.1);
+}
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+
+/**/
+@keyframes ball {
+  0% {
+    width: 50px;
+    height: 50px;
+  }
+  95% {
+    width: 60px;
+    height: 60px;
+  }
+  to {
+    width: 60px;
+    height: 60px;
+  }
+}
+.liketext > div {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  font-family: OTEnjoystoriesBA;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+.userimg {
+  display: inline-block;
+  height: 150px;
+  width: 200px;
+  position: relative;
+}
+.사용자 > textarea {
+  position: relative;
+  margin-left: 30px;
+}
+.사용자 > .usercon {
+  display: inline-block;
+}
+.사용자 > .contant {
+  display: inline-block;
+}
+.usercon {
+  width: auto;
+  border-radius: 15px;
+  border: 2px solid rgb(233, 233, 233);
+  overflow: hidden;
+}
+.usercon > div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.usercon > img {
+  object-fit: cover;
+}
+
+.사용자 {
+  display: inline-flex;
+  width: 100%;
+  height: auto;
+}
+textarea {
+  width: 740px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding: 10px;
+  background-color: rgb(233, 233, 233);
+}
+hr {
+  margin: 200px 0;
+}
+
+.contant {
+  position: relative;
+  width: 740px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  background-color: rgb(233, 233, 233);
+  display: block;
+  padding: 10px;
+  min-height: 174px;
+  margin-left: 30px;
+}
+.사용자 {
+  margin: 10px;
+}
+.left > img {
+  object-fit: contain;
+}
+li > img:hover {
+  transition: transform 300ms ease;
+  transform: scale(1.1);
+}
+.star-rating {
+  position: relative;
+  left: 25%;
+}
